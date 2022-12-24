@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="container-fluid px-1 px-sm-3 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="row card0">
+                <div class="card1 col-lg-8 col-md-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                        class="bi bi-clouds" viewBox="0 0 16 16">
+                        <path
+                            d="M16 7.5a2.5 2.5 0 0 1-1.456 2.272 3.513 3.513 0 0 0-.65-.824 1.5 1.5 0 0 0-.789-2.896.5.5 0 0 1-.627-.421 3 3 0 0 0-5.22-1.625 5.587 5.587 0 0 0-1.276.088 4.002 4.002 0 0 1 7.392.91A2.5 2.5 0 0 1 16 7.5z" />
+                        <path
+                            d="M7 5a4.5 4.5 0 0 1 4.473 4h.027a2.5 2.5 0 0 1 0 5H3a3 3 0 0 1-.247-5.99A4.502 4.502 0 0 1 7 5zm3.5 4.5a3.5 3.5 0 0 0-6.89-.873.5.5 0 0 1-.51.375A2 2 0 1 0 3 13h8.5a1.5 1.5 0 1 0-.376-2.953.5.5 0 0 1-.624-.492V9.5z" />
+                    </svg>
+                    <div class="text-center">
+
+                        <img class="image mt-5" src="png.png">
+
+
+                    </div>
+                    <div class="row px-3 mt-3 mb-3">
+                        <h1 id="temp_valor" class="large-font mr-3"></h1>
+                        <div class="d-flex flex-column mr-3">
+                            <h2 id="ciudad" class="mt-3 mb-0"></h2>
+                            <small id="desc"></small>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <img id="imagen" src="" alt="Ícono del clima" />
+                            <small></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 col-lg-4 col-md-5">
+                    <div class="row px-3">
+                        <form id="miForm" action="">
+                            <input type="text" name="location" id="searchValor" placeholder="Another location"
+                                class="mb-5">
+                            <button class="fa fa-search mb-5 mr-0 text-center"></button>
+                        </form>
+
+                    </div>
+                    <div class="mr-5">
+                        <p class="mb-4">Weather Details</p>
+                        <div class="row px-3">
+                            <p class="light-text">Temp. Max</p>
+                            <p id="tempMax" class="ml-auto"></p>
+                        </div>
+
+                        <div class="row px-3">
+                            <p class="light-text">Temp. Min</p>
+
+                            <p id="tempMin" class="ml-auto"></p>
+
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Pressure</p>
+                            <p id="press" class="ml-auto"></p>
+                        </div>
+
+                        <div class="line my-5"></div>
+
+
+                        <div class="row px-3">
+                            <p class="light-text">Cloudy</p>
+                            <p id="cloudyValor" class="ml-auto"></p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Humidity</p>
+                            <p id="humidityValor" class="ml-auto"></p>
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Wind</p>
+
+                            <p id="windValor" class="ml-auto"></p>
+
+                        </div>
+                        <div class="row px-3">
+                            <p class="light-text">Visibility</p>
+                            <p id="rainValor" class="ml-auto"></p>
+                        </div>
+
+                        <div class="line mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/index.js"></script>
+
+</html>
